@@ -28,7 +28,7 @@ Admim - Posts
             <td>{{ $post->slug }}</td>
             <td class="d-flex justify-content-between">
                 <a href="{{ route('admin.posts.show', ['post'=> $post->slug]) }}" class="btn btn-primary"> <i class="fas fa-eye fa-xs fa-fw"></i> </a>
-                <a href="#" class="btn btn-secondary"> <i class="fas fa-pen fa-xs fa-fw"></i> </a>
+                <a href="{{ route('admin.posts.edit', ['post'=> $post->slug]) }}" class="btn btn-secondary"> <i class="fas fa-pen fa-xs fa-fw"></i> </a>
                 <a href="#" class="btn btn-danger"> <i class="fas fa-trash fa-xs fa-fw"></i> </a>
             </td>
         </tr>
