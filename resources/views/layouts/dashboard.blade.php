@@ -60,6 +60,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('admin.home') }}">Dashboard</a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -81,10 +83,10 @@
             <div class="row">
                 <div class="col-xs-12 col-md-2 col-lg-2">
                     <ul class="list-unstyled">
-                        <li><a href="{{ route('admin.home') }}">Dashboard</a></li>
-                        <li><a href="{{ route('admin.posts.index') }}">Posts</a></li>
-                        <li><a href="#">Categorie</a></li>
-                        <li><a href="#">Tag</a></li>
+                        <li><a href="{{ route('admin.home') }}"> <i class="fas fa-tachometer-alt fa-sm fa-fw"></i> Dashboard</a></li>
+                        <li><a href="{{ route('admin.posts.index') }}"> <i class="fas fa-edit fa-sm fa-fw"></i> Posts</a></li>
+                        <li><a href="#"> <i class="fas fa-list fa-sm fa-fw"></i> Categories</a></li>
+                        <li><a href="#"> <i class="fas fa-tags fa-sm fa-fw"></i> Tags</a></li>
                     </ul>
                 </div>
                 
