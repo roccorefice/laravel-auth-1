@@ -6,6 +6,11 @@ Admim - Posts
 
 @section('content')
 
+<div class="jumbotron">
+    <h1 class="display-4">All Posts</h1>
+    <a class="btn btn-primary btn-lg" href="{{ route('admin.posts.create') }}">Write a post</a>
+</div>
+
 <table class="table">
     <thead>
         <tr>
