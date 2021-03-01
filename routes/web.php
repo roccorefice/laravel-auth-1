@@ -17,6 +17,7 @@ Route::get('/', 'PageController@index');
 Route::get('about', 'PageController@about');
 
 Route::get('blog', 'PostController@index')->name('blog');
+Route::get('blog/{post}', 'PostController@show')->name('guest_show');
 
 Auth::routes();
 

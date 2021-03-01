@@ -4,15 +4,17 @@
 
     <div class="row justify-content-center">
         <div class="col-md-8">
-            @foreach($posts as $post)
+            
             <div class="card my-4">
                 <div class="card-header"> 
-                    <a href="{{ route('guest_show', $post->slug) }}"> {{ $post->title }} </a>
+                    <h1>{{ $post->title }}</h1>
                 </div>
 
-                <div class="card-body"> {{ $post->body }} </div>
+                <div class="card-body">
+                    <p class="lead"> {{ $post->body }} </p>
+                </div>
             </div>
-            @endforeach
+           
         </div>
     </div>
 
